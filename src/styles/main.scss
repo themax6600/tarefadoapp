@@ -1,0 +1,34 @@
+$fontePrincipal: Roboto, sans-serif;
+$fonteTitulo:Lobster, cursive;
+$button: #69B99D;
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20vw;
+    margin-right: 20vw;
+
+    .btn-header{
+        display: flex;
+        align-items: center;
+    }
+    
+    button{
+        border: none;
+    }
+    img{
+        width: 40vw;
+    }
+}
+
+.btn{
+    color: white;
+    background-color: $button;
+    border-radius: 0.5rem;
+    padding-top: 1rem;
+}
+
+span{
+    color: $button;
+}
