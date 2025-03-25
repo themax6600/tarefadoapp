@@ -1,14 +1,37 @@
-$fontePrincipal: Roboto, sans-serif;
-$fonteTitulo:Lobster, cursive;
-$button: #69B99D;
+$fontePrincipal: Poppins, sans-serif;
+$corPrincipal: #69B99D;
+$corImg: #CCF4E6;
+$textColor: #878888;
 
-.container{
+section{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 20vw;
-    margin-right: 20vw;
+    font-family: $fontePrincipal;
+}
 
+hr{
+    color: #CCF4E6;
+}
+
+span{
+    color: $corPrincipal;
+}
+
+.container{
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+h5{
+    color: $textColor;
+}
+
+header{
+    
+    h4{
+        font-size: 1.25rem;
+    }
     .btn-header{
         display: flex;
         align-items: center;
@@ -16,19 +39,75 @@ $button: #69B99D;
     
     button{
         border: none;
-    }
-    img{
-        width: 40vw;
+        background-color: white;
+        font-family: $fontePrincipal;
     }
 }
 
-.btn{
-    color: white;
-    background-color: $button;
-    border-radius: 0.5rem;
-    padding-top: 1rem;
-}
-
-span{
-    color: $button;
+main{
+    section{
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        .btn{
+            color: white;
+            background-color: $corPrincipal;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            font-size: 1rem;
+        }
+        .col{
+            width: 50vw;
+            h5{
+                font-size: 1rem;
+            }
+            h2{
+                font-size: 2rem;
+            }
+        }
+        .img1{
+            width: 40vw;
+            -webkit-box-shadow: 60px -25px 0px 5px $corImg;
+            -moz-box-shadow: 60px -25px 0px 5px $corImg;
+            box-shadow: 60px -25px 0px 5px $corImg;
+        }
+        .img2{
+            width: 40vw;
+            -webkit-box-shadow: -54px -81px 0px -54px $corImg;
+            -moz-box-shadow: -54px -81px 0px -54px $corImg;
+            box-shadow: -54px -81px 0px -54px $corImg;
+        }
+    }
+    .container-service{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        .row-card{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 3rem;
+            .card{
+                width: 20vw;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 2rem;
+                margin-left: 1rem;
+                -webkit-box-shadow: 0px -12px 8px -7px rgba(0,0,0,0.09);
+                -moz-box-shadow: 0px -12px 8px -7px rgba(0,0,0,0.09);
+                box-shadow: 0px -12px 8px -7px rgba(0,0,0,0.09);
+                border-bottom: $corPrincipal 5px solid;
+                h5{
+                    text-align: center;
+                }
+                img{
+                    width: 5vw;
+                }
+            }
+        }
+    }
 }

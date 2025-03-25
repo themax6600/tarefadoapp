@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "grunt": "^1.6.1",
+    "grunt": "^1.5.3",
     "sass": "^1.86.0"
   },
   "name": "tarefadoapp",
