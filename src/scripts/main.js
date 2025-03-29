@@ -59,7 +59,6 @@ let slides = document.querySelectorAll('.slideshow');
                 dots[i].setAttribute('class', 'dot');
             }
 
-
             slides[slideIndex - 1].style.display = 'block';
             dots[slideIndex - 1].setAttribute('class', 'dot ativo');
             clearTimeout(timeoutID);
