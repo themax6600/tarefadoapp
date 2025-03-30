@@ -59,10 +59,6 @@ const showSlides = (n) => {
     timeoutID = setTimeout(autoSlides, 4000);
 };
 
-const plusSlides = (n) => {
-    showSlides(slideIndex += n);
-};
-
 const currentSlide = (n) => {
     showSlides(slideIndex = n);
 };
@@ -85,7 +81,7 @@ function autoSlides() {
 
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].setAttribute('class', 'dot ativo');
-    timeoutID = setTimeout(autoSlides, 4000);
+    timeoutID = setTimeout(autoSlides, 1000);
 }
 
 autoSlides();

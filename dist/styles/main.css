@@ -37,7 +37,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-family: Poppins, sans-serif;
+  font-family: Montserrat, sans-serif;
   justify-content: space-between;
   padding: 0 10%;
   height: 3.5em;
@@ -90,13 +90,15 @@ header img {
   }
 }
 
+main {
+  font-family: Raleway, sans-serif;
+}
 main section {
   margin-top: 10rem;
   margin-bottom: 10rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-family: Poppins, sans-serif;
 }
 main section .btn {
   color: white;
@@ -204,7 +206,7 @@ footer {
   background-color: #69B99D;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  font-family: Poppins, sans-serif;
+  font-family: Raleway, sans-serif;
 }
 footer span {
   color: #ffffff;
@@ -249,6 +251,12 @@ footer section .col-footer img {
     flex-direction: column;
     align-items: center;
   }
+  .container .col h2 {
+    margin-top: 1rem;
+  }
+  .container .col h5 {
+    margin: 1rem;
+  }
   .container .col button {
     width: 70%;
   }
@@ -274,6 +282,12 @@ footer section .col-footer img {
   }
   .container-about .col-about h2 {
     margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .container-service .row {
+    text-align: start;
+  }
+  .container-service .row h2 {
     margin-bottom: 1rem;
   }
   .container-service .row-card {
@@ -332,37 +346,18 @@ footer section .col-footer img {
   margin: auto;
 }
 
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: rgb(73, 73, 73);
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-.next {
-  right: 0;
-}
-
 .paginacao {
   width: 100%;
   float: left;
-  margin: 10px 0;
+  margin: 1rem 0;
   text-align: center;
 }
 
 .dot {
   height: 13px;
   width: 13px;
-  margin: 0 4px;
-  border-radius: 50px;
+  margin: 1rem 0 0 1rem;
+  border-radius: 3rem;
   background-color: #CCF4E6;
   display: inline-block;
 }
